@@ -1,4 +1,4 @@
-def append_to_list(item, my_list=[]):
+def faulty_append_to_list(item, my_list=[]):
     """
     In this function, the default argument my_list is initialized only once, so subsequent function calls modify the same list. 
     """
@@ -15,9 +15,9 @@ def fixed_append_to_list(item, my_list=None):
     return my_list
 
 if __name__ == '__main__':
-    print(append_to_list(1))
-    print(append_to_list(2))
-    print(append_to_list(3))
+    print(faulty_append_to_list(1))
+    print(faulty_append_to_list(2))
+    print(faulty_append_to_list(3))
 
     print(fixed_append_to_list(1))
     print(fixed_append_to_list(2))
